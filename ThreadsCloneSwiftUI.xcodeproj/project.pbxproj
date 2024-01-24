@@ -62,11 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				704AE1462B610C3D00693CFA /* Components */,
-				704AE12A2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift */,
-				704AE12C2B5BAD5000693CFA /* ContentView.swift */,
-				704AE1422B61026700693CFA /* LoginView.swift */,
-				704AE1442B610A9E00693CFA /* RegistrationView.swift */,
-				704AE14D2B61111C00693CFA /* ThreadsTabView.swift */,
+				704AE14F2B6116F700693CFA /* App */,
+				704AE1502B61170E00693CFA /* Authorization */,
+				704AE1512B61178B00693CFA /* Tabs */,
 				704AE1412B61020000693CFA /* Supporting files */,
 				704AE1302B5BAD5100693CFA /* Preview Content */,
 			);
@@ -112,6 +110,72 @@
 				704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */,
 			);
 			name = Modifiers;
+			sourceTree = "<group>";
+		};
+		704AE14F2B6116F700693CFA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				704AE12A2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift */,
+				704AE12C2B5BAD5000693CFA /* ContentView.swift */,
+				704AE14D2B61111C00693CFA /* ThreadsTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		704AE1502B61170E00693CFA /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1422B61026700693CFA /* LoginView.swift */,
+				704AE1442B610A9E00693CFA /* RegistrationView.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		704AE1512B61178B00693CFA /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1522B6117AD00693CFA /* Feed */,
+				704AE1532B6117D600693CFA /* Explore */,
+				704AE1542B6117E000693CFA /* NewThread */,
+				704AE1552B6117F800693CFA /* Favorites */,
+				704AE1562B61180600693CFA /* Profile */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		704AE1522B6117AD00693CFA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		704AE1532B6117D600693CFA /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		704AE1542B6117E000693CFA /* NewThread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewThread;
+			sourceTree = "<group>";
+		};
+		704AE1552B6117F800693CFA /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		704AE1562B61180600693CFA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

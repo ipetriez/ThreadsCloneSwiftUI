@@ -15,6 +15,7 @@
 		704AE1452B610A9E00693CFA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1442B610A9E00693CFA /* RegistrationView.swift */; };
 		704AE14A2B610CA400693CFA /* AuthFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1492B610CA400693CFA /* AuthFieldModifier.swift */; };
 		704AE14C2B610DFC00693CFA /* AuthActionButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */; };
+		704AE14E2B61111C00693CFA /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE14D2B61111C00693CFA /* ThreadsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		704AE1442B610A9E00693CFA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		704AE1492B610CA400693CFA /* AuthFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFieldModifier.swift; sourceTree = "<group>"; };
 		704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionButtonModifier.swift; sourceTree = "<group>"; };
+		704AE14D2B61111C00693CFA /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				704AE12C2B5BAD5000693CFA /* ContentView.swift */,
 				704AE1422B61026700693CFA /* LoginView.swift */,
 				704AE1442B610A9E00693CFA /* RegistrationView.swift */,
+				704AE14D2B61111C00693CFA /* ThreadsTabView.swift */,
 				704AE1412B61020000693CFA /* Supporting files */,
 				704AE1302B5BAD5100693CFA /* Preview Content */,
 			);
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				704AE1432B61026700693CFA /* LoginView.swift in Sources */,
+				704AE14E2B61111C00693CFA /* ThreadsTabView.swift in Sources */,
 				704AE12D2B5BAD5000693CFA /* ContentView.swift in Sources */,
 				704AE14C2B610DFC00693CFA /* AuthActionButtonModifier.swift in Sources */,
 				704AE12B2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift in Sources */,

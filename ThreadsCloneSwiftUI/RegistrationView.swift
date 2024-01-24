@@ -25,32 +25,17 @@ struct RegistrationView: View {
             
             VStack {
                 TextField("Enter your email", text: $email)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.horizontal, 24)
+                    .textInputAutocapitalization(.never)
+                    .modifier(AuthFieldModifier())
                 
                 SecureField("Enter your password", text: $password)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.horizontal, 24)
+                    .modifier(AuthFieldModifier())
                 
                 SecureField("Enter your full name", text: $fullName)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.horizontal, 24)
+                    .modifier(AuthFieldModifier())
                 
                 SecureField("Enter your username", text: $userName)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.horizontal, 24)
+                    .modifier(AuthFieldModifier())
             }
             
             NavigationLink {
@@ -69,12 +54,7 @@ struct RegistrationView: View {
                 
             } label: {
                 Text("Sign Up")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(.white)
-                    .frame(width: 352, height: 44)
-                    .background(.black)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .modifier(AuthActionButtonModifier())
             }
             
             Spacer()

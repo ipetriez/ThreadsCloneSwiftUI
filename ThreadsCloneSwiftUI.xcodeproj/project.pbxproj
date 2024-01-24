@@ -13,6 +13,8 @@
 		704AE1322B5BAD5100693CFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704AE1312B5BAD5100693CFA /* Preview Assets.xcassets */; };
 		704AE1432B61026700693CFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1422B61026700693CFA /* LoginView.swift */; };
 		704AE1452B610A9E00693CFA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1442B610A9E00693CFA /* RegistrationView.swift */; };
+		704AE14A2B610CA400693CFA /* AuthFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1492B610CA400693CFA /* AuthFieldModifier.swift */; };
+		704AE14C2B610DFC00693CFA /* AuthActionButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		704AE1312B5BAD5100693CFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		704AE1422B61026700693CFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		704AE1442B610A9E00693CFA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		704AE1492B610CA400693CFA /* AuthFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFieldModifier.swift; sourceTree = "<group>"; };
+		704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		704AE1292B5BAD5000693CFA /* ThreadsCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				704AE1462B610C3D00693CFA /* Components */,
 				704AE12A2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift */,
 				704AE12C2B5BAD5000693CFA /* ContentView.swift */,
 				704AE1422B61026700693CFA /* LoginView.swift */,
@@ -79,6 +84,31 @@
 				704AE12E2B5BAD5100693CFA /* Assets.xcassets */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		704AE1462B610C3D00693CFA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1482B610C5700693CFA /* Modifiers */,
+				704AE1472B610C4600693CFA /* Views */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		704AE1472B610C4600693CFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		704AE1482B610C5700693CFA /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1492B610CA400693CFA /* AuthFieldModifier.swift */,
+				704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */,
+			);
+			name = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +183,9 @@
 			files = (
 				704AE1432B61026700693CFA /* LoginView.swift in Sources */,
 				704AE12D2B5BAD5000693CFA /* ContentView.swift in Sources */,
+				704AE14C2B610DFC00693CFA /* AuthActionButtonModifier.swift in Sources */,
 				704AE12B2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift in Sources */,
+				704AE14A2B610CA400693CFA /* AuthFieldModifier.swift in Sources */,
 				704AE1452B610A9E00693CFA /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

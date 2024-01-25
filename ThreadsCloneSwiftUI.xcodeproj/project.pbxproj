@@ -25,6 +25,7 @@
 		704AE1662B628E7F00693CFA /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1652B628E7F00693CFA /* AvatarImageView.swift */; };
 		704AE1682B6294DE00693CFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1672B6294DE00693CFA /* ProfileView.swift */; };
 		704AE16A2B6294ED00693CFA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1692B6294ED00693CFA /* ProfileViewModel.swift */; };
+		704AE16C2B629B7F00693CFA /* ProfileViewSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		704AE1652B628E7F00693CFA /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		704AE1672B6294DE00693CFA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		704AE1692B6294ED00693CFA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				704AE1652B628E7F00693CFA /* AvatarImageView.swift */,
 				704AE15B2B627AFA00693CFA /* ThreadItemView.swift */,
 				704AE1632B628B5D00693CFA /* SearchItemView.swift */,
+				704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				704AE14E2B61111C00693CFA /* ThreadsTabView.swift in Sources */,
 				704AE15C2B627AFA00693CFA /* ThreadItemView.swift in Sources */,
 				704AE1642B628B5D00693CFA /* SearchItemView.swift in Sources */,
+				704AE16C2B629B7F00693CFA /* ProfileViewSegmentedControl.swift in Sources */,
 				704AE1682B6294DE00693CFA /* ProfileView.swift in Sources */,
 				704AE12D2B5BAD5000693CFA /* ContentView.swift in Sources */,
 				704AE14C2B610DFC00693CFA /* AuthActionButtonModifier.swift in Sources */,

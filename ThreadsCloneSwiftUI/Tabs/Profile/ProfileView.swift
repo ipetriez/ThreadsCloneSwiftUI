@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var selectedSegment: Segment = .threads
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
@@ -44,6 +46,8 @@ struct ProfileView: View {
                         .background(.black)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 })
+                
+                ProfileViewSegmentedControl(selectedSegment: $selectedSegment)
             }
         }
         .padding(.horizontal)

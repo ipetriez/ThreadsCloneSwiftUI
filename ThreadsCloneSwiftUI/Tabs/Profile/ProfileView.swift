@@ -48,6 +48,10 @@ struct ProfileView: View {
                 })
                 
                 ProfileViewSegmentedControl(selectedSegment: $selectedSegment)
+                
+                ForEach(0 ... 10, id: \.self) { thread in
+                    ThreadItemView()
+                }
             }
         }
         .padding(.horizontal)

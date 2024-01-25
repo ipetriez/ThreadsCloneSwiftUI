@@ -11,11 +11,7 @@ struct SearchItemView: View {
     var body: some View {
         VStack {
             HStack {
-                Image("av-2")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(.circle)
+                AvatarImageView("av-2")
                 
                 VStack(alignment: .leading) {
                     Text("jimmycool")

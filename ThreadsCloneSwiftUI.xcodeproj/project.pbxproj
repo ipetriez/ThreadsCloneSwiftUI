@@ -22,6 +22,7 @@
 		704AE15E2B6288DC00693CFA /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE15D2B6288DC00693CFA /* ExploreView.swift */; };
 		704AE1602B6288EC00693CFA /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE15F2B6288EC00693CFA /* ExploreViewModel.swift */; };
 		704AE1642B628B5D00693CFA /* SearchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1632B628B5D00693CFA /* SearchItemView.swift */; };
+		704AE1662B628E7F00693CFA /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1652B628E7F00693CFA /* AvatarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		704AE15D2B6288DC00693CFA /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		704AE15F2B6288EC00693CFA /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		704AE1632B628B5D00693CFA /* SearchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemView.swift; sourceTree = "<group>"; };
+		704AE1652B628E7F00693CFA /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		704AE1472B610C4600693CFA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				704AE1652B628E7F00693CFA /* AvatarImageView.swift */,
 				704AE15B2B627AFA00693CFA /* ThreadItemView.swift */,
 				704AE1632B628B5D00693CFA /* SearchItemView.swift */,
 			);
@@ -279,6 +282,7 @@
 				704AE14A2B610CA400693CFA /* AuthFieldModifier.swift in Sources */,
 				704AE1452B610A9E00693CFA /* RegistrationView.swift in Sources */,
 				704AE15A2B6279A700693CFA /* FeedViewModel.swift in Sources */,
+				704AE1662B628E7F00693CFA /* AvatarImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

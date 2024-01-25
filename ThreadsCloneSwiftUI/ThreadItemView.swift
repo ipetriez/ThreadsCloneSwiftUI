@@ -11,11 +11,7 @@ struct ThreadItemView: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                Image("av-1")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(.circle)
+                AvatarImageView("av-1")
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {

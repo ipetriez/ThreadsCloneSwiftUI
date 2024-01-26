@@ -26,6 +26,7 @@
 		704AE1682B6294DE00693CFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1672B6294DE00693CFA /* ProfileView.swift */; };
 		704AE16A2B6294ED00693CFA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1692B6294ED00693CFA /* ProfileViewModel.swift */; };
 		704AE16C2B629B7F00693CFA /* ProfileViewSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */; };
+		704AE16F2B63E53400693CFA /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE16E2B63E53400693CFA /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		704AE1672B6294DE00693CFA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		704AE1692B6294ED00693CFA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewSegmentedControl.swift; sourceTree = "<group>"; };
+		704AE16E2B63E53400693CFA /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,10 +204,19 @@
 		704AE1562B61180600693CFA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				704AE16D2B63E52200693CFA /* EditProfile */,
 				704AE1672B6294DE00693CFA /* ProfileView.swift */,
 				704AE1692B6294ED00693CFA /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		704AE16D2B63E52200693CFA /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				704AE16E2B63E53400693CFA /* EditProfileView.swift */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704AE16F2B63E53400693CFA /* EditProfileView.swift in Sources */,
 				704AE1602B6288EC00693CFA /* ExploreViewModel.swift in Sources */,
 				704AE15E2B6288DC00693CFA /* ExploreView.swift in Sources */,
 				704AE1582B62799B00693CFA /* FeedView.swift in Sources */,

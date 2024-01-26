@@ -28,6 +28,7 @@
 		704AE16C2B629B7F00693CFA /* ProfileViewSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */; };
 		704AE16F2B63E53400693CFA /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE16E2B63E53400693CFA /* EditProfileView.swift */; };
 		704AE1712B63F22300693CFA /* NewThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1702B63F22300693CFA /* NewThreadView.swift */; };
+		70F030CC2B64079500FCDAF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70F030CB2B64079500FCDAF2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewSegmentedControl.swift; sourceTree = "<group>"; };
 		704AE16E2B63E53400693CFA /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		704AE1702B63F22300693CFA /* NewThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThreadView.swift; sourceTree = "<group>"; };
+		70F030CB2B64079500FCDAF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				704AE1512B61178B00693CFA /* Tabs */,
 				704AE1412B61020000693CFA /* Supporting files */,
 				704AE1302B5BAD5100693CFA /* Preview Content */,
+				70F030CB2B64079500FCDAF2 /* GoogleService-Info.plist */,
 			);
 			path = ThreadsCloneSwiftUI;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				704AE1322B5BAD5100693CFA /* Preview Assets.xcassets in Resources */,
 				704AE12F2B5BAD5100693CFA /* Assets.xcassets in Resources */,
+				70F030CC2B64079500FCDAF2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

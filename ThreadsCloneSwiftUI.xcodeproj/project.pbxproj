@@ -44,6 +44,8 @@
 		70F030EB2B6408A100FCDAF2 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 70F030EA2B6408A100FCDAF2 /* FirebaseFirestoreCombine-Community */; };
 		70F030ED2B6408A100FCDAF2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70F030EC2B6408A100FCDAF2 /* FirebaseFirestoreSwift */; };
 		70F030EF2B640A3A00FCDAF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */; };
+		70F030F32B65210000FCDAF2 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */; };
+		70F030F62B6521D900FCDAF2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030F52B6521D900FCDAF2 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		704AE16E2B63E53400693CFA /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		704AE1702B63F22300693CFA /* NewThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThreadView.swift; sourceTree = "<group>"; };
 		70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		70F030F52B6521D900FCDAF2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +121,11 @@
 		704AE1292B5BAD5000693CFA /* ThreadsCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				70F030C82B64070400FCDAF2 /* Components */,
+				70F030F42B6521CA00FCDAF2 /* Services */,
 				704AE14F2B6116F700693CFA /* App */,
-				704AE1502B61170E00693CFA /* Authorization */,
-				704AE1512B61178B00693CFA /* Tabs */,
+				704AE1502B61170E00693CFA /* Authorization flow */,
+				704AE1512B61178B00693CFA /* Main flow */,
+				70F030C82B64070400FCDAF2 /* Components */,
 				704AE1412B61020000693CFA /* Supporting files */,
 				704AE1302B5BAD5100693CFA /* Preview Content */,
 				70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */,
@@ -154,16 +159,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		704AE1502B61170E00693CFA /* Authorization */ = {
+		704AE1502B61170E00693CFA /* Authorization flow */ = {
 			isa = PBXGroup;
 			children = (
-				704AE1422B61026700693CFA /* LoginView.swift */,
-				704AE1442B610A9E00693CFA /* RegistrationView.swift */,
+				70F030F02B65203D00FCDAF2 /* LoginView */,
+				70F030F12B65205E00FCDAF2 /* RegisterView */,
 			);
-			path = Authorization;
+			path = "Authorization flow";
 			sourceTree = "<group>";
 		};
-		704AE1512B61178B00693CFA /* Tabs */ = {
+		704AE1512B61178B00693CFA /* Main flow */ = {
 			isa = PBXGroup;
 			children = (
 				704AE1522B6117AD00693CFA /* Feed */,
@@ -172,7 +177,7 @@
 				704AE1552B6117F800693CFA /* Favorites */,
 				704AE1562B61180600693CFA /* Profile */,
 			);
-			path = Tabs;
+			path = "Main flow";
 			sourceTree = "<group>";
 		};
 		704AE1522B6117AD00693CFA /* Feed */ = {
@@ -253,6 +258,31 @@
 				704AE14B2B610DFC00693CFA /* AuthActionButtonModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		70F030F02B65203D00FCDAF2 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1422B61026700693CFA /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		70F030F12B65205E00FCDAF2 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1442B610A9E00693CFA /* RegistrationView.swift */,
+				70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		70F030F42B6521CA00FCDAF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70F030F52B6521D900FCDAF2 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +381,8 @@
 				704AE15E2B6288DC00693CFA /* ExploreView.swift in Sources */,
 				704AE1582B62799B00693CFA /* FeedView.swift in Sources */,
 				704AE1432B61026700693CFA /* LoginView.swift in Sources */,
+				70F030F32B65210000FCDAF2 /* RegistrationViewModel.swift in Sources */,
+				70F030F62B6521D900FCDAF2 /* AuthService.swift in Sources */,
 				704AE14E2B61111C00693CFA /* MainTabView.swift in Sources */,
 				704AE15C2B627AFA00693CFA /* ThreadItemView.swift in Sources */,
 				704AE1642B628B5D00693CFA /* SearchItemView.swift in Sources */,

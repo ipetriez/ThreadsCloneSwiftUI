@@ -25,6 +25,7 @@ struct LoginView: View {
                 
                 VStack {
                     TextField("Enter your email", text: $email)
+                        .textInputAutocapitalization(.never)
                         .modifier(AuthFieldModifier())
                     
                     SecureField("Enter your password", text: $password)
@@ -44,7 +45,7 @@ struct LoginView: View {
                 }
                 
                 Button {
-                    
+                    Task { try await AuthService.shared.loginUser(with: email, password: password) }
                 } label: {
                     Text("Login")
                         .modifier(AuthActionButtonModifier())

@@ -11,54 +11,66 @@ struct ProfileView: View {
     @State private var selectedSegment: Segment = .threads
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Charlie Moody")
-                                .font(.title2)
-                                .fontWeight(.semibold)
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 20) {
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 12) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("Charlie Moody")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                
+                                Text("charlie_moody")
+                                    .font(.subheadline)
+                            }
                             
-                            Text("charlie_moody")
-                                .font(.subheadline)
+                            Text("Some random Charlie")
+                                .font(.footnote)
+                            
+                            Text("13 followers")
+                                .font(.caption)
+                                .foregroundStyle(.gray)
                         }
                         
-                        Text("Some random Charlie")
-                            .font(.footnote)
+                        Spacer()
                         
-                        Text("13 followers")
-                            .font(.caption)
-                            .foregroundStyle(.gray)
+                        AvatarImageView("av-3")
                     }
                     
-                    Spacer()
+                    Button(action: {}, label: {
+                        Text("Follow")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.white)
+                            .frame(width: 352, height: 32)
+                            .background(.black)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                    })
                     
-                    AvatarImageView("av-3")
+                    ProfileViewSegmentedControl(selectedSegment: $selectedSegment)
+                    
+                    LazyVStack {
+                        ForEach(0 ... 10, id: \.self) { thread in
+                            ThreadItemView()
+                        }
+                    }
                 }
-                
-                Button(action: {}, label: {
-                    Text("Follow")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 352, height: 32)
-                        .background(.black)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                })
-                
-                ProfileViewSegmentedControl(selectedSegment: $selectedSegment)
-                
-                LazyVStack {
-                    ForEach(0 ... 10, id: \.self) { thread in
-                        ThreadItemView()
-                    }
+                .padding(.vertical,8)
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        AuthService.shared.signOut()
+                    }, label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundStyle(.black)
+                    })
                 }
             }
-            .padding(.vertical,8)
+            .padding(.horizontal)
+            .scrollIndicators(.hidden)
         }
-        .padding(.horizontal)
-        .scrollIndicators(.hidden)
     }
 }
 

@@ -47,6 +47,7 @@
 		70F030F32B65210000FCDAF2 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */; };
 		70F030F62B6521D900FCDAF2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030F52B6521D900FCDAF2 /* AuthService.swift */; };
 		70F030FB2B6543CF00FCDAF2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030FA2B6543CF00FCDAF2 /* ContentViewModel.swift */; };
+		70F030FD2B654B9300FCDAF2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030FC2B654B9300FCDAF2 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		70F030F52B6521D900FCDAF2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		70F030FA2B6543CF00FCDAF2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		70F030FC2B654B9300FCDAF2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				704AE1422B61026700693CFA /* LoginView.swift */,
+				70F030FC2B654B9300FCDAF2 /* LoginViewModel.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F030FD2B654B9300FCDAF2 /* LoginViewModel.swift in Sources */,
 				704AE16F2B63E53400693CFA /* EditProfileView.swift in Sources */,
 				704AE1602B6288EC00693CFA /* ExploreViewModel.swift in Sources */,
 				704AE15E2B6288DC00693CFA /* ExploreView.swift in Sources */,

@@ -11,7 +11,11 @@ final class AuthService {
     
     static let shared = AuthService()
     
-    private init() { }
+    @Published var userSession: FirebaseAuth.User?
+    
+    private init() { 
+        self.userSession = Auth.auth().currentUser
+    }
     
     @MainActor
     func registerNewUser(with email: String, password: String, fullName: String, userName: String) async throws {
@@ -29,5 +33,10 @@ final class AuthService {
         } catch {
             print("DEBUG: Failed to sign in with the following error: \(error)")
         }
+    }
+    
+    func signOut() {
+        try? Auth.auth().signOut()
+        userSession = nil
     }
 }

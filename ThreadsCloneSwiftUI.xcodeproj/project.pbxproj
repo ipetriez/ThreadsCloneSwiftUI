@@ -46,6 +46,7 @@
 		70F030EF2B640A3A00FCDAF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */; };
 		70F030F32B65210000FCDAF2 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */; };
 		70F030F62B6521D900FCDAF2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030F52B6521D900FCDAF2 /* AuthService.swift */; };
+		70F030FB2B6543CF00FCDAF2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030FA2B6543CF00FCDAF2 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		70F030F22B65210000FCDAF2 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		70F030F52B6521D900FCDAF2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		70F030FA2B6543CF00FCDAF2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				704AE12A2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift */,
-				704AE12C2B5BAD5000693CFA /* ContentView.swift */,
-				704AE14D2B61111C00693CFA /* MainTabView.swift */,
+				70F030F72B65437600FCDAF2 /* Root */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -285,6 +286,32 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		70F030F72B65437600FCDAF2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				70F030F82B6543B400FCDAF2 /* ContentView */,
+				70F030F92B6543BE00FCDAF2 /* MainTabView */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		70F030F82B6543B400FCDAF2 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				704AE12C2B5BAD5000693CFA /* ContentView.swift */,
+				70F030FA2B6543CF00FCDAF2 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		70F030F92B6543BE00FCDAF2 /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				704AE14D2B61111C00693CFA /* MainTabView.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,6 +421,7 @@
 				704AE12B2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift in Sources */,
 				704AE14A2B610CA400693CFA /* AuthFieldModifier.swift in Sources */,
 				704AE1452B610A9E00693CFA /* RegistrationView.swift in Sources */,
+				70F030FB2B6543CF00FCDAF2 /* ContentViewModel.swift in Sources */,
 				704AE15A2B6279A700693CFA /* FeedViewModel.swift in Sources */,
 				704AE16A2B6294ED00693CFA /* ProfileViewModel.swift in Sources */,
 				704AE1662B628E7F00693CFA /* AvatarImageView.swift in Sources */,

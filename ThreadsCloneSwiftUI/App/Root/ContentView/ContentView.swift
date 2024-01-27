@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm = ContentViewModel()
+    
     var body: some View {
-        VStack {
-            LoginView()
+        Group {
+            if let userSession = vm.userSession {
+                MainTabView()
+            } else {
+                LoginView()
+            }
         }
-        .padding()
     }
 }
 

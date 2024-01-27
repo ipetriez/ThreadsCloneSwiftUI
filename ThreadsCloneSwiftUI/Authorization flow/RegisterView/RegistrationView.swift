@@ -29,10 +29,11 @@ struct RegistrationView: View {
                 SecureField("Enter your password", text: $vm.password)
                     .modifier(AuthFieldModifier())
                 
-                SecureField("Enter your full name", text: $vm.fullName)
+                TextField("Enter your full name", text: $vm.fullName)
                     .modifier(AuthFieldModifier())
                 
-                SecureField("Enter your username", text: $vm.userName)
+                TextField("Enter your username", text: $vm.userName)
+                    .textInputAutocapitalization(.never)
                     .modifier(AuthFieldModifier())
             }
             

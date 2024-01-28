@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @State private var selectedSegment: Segment = .threads
+    @State private var vm = ProfileViewModel()
     
     var body: some View {
         NavigationStack {

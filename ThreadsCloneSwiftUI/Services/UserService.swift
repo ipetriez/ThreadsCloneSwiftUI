@@ -13,7 +13,9 @@ final class UserService {
     
     static let shared = UserService()
     
-    private init() {}
+    private init() {
+        Task { try await getCurrentUser() }
+    }
     
     @MainActor
     func getCurrentUser() async throws {

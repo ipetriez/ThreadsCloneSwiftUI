@@ -6,6 +6,7 @@
 //
 
 import Firebase
+import FirebaseFirestore
 
 final class AuthService {
     
@@ -20,7 +21,9 @@ final class AuthService {
     @MainActor
     func registerNewUser(with email: String, password: String, fullName: String, userName: String) async throws {
         do {
-            userSession = try await Auth.auth().createUser(withEmail: email, password: password).user
+            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            userSession = result.user
+            try await uploadUserData(result.user.uid, email: email, fullName: fullName, userName: userName)
         } catch {
             print("DEBUG: Failed to register new user with the following error: \(error)")
         }
@@ -38,5 +41,16 @@ final class AuthService {
     func signOut() {
         try? Auth.auth().signOut()
         userSession = nil
+    }
+    
+    @MainActor
+    private func uploadUserData(_ id: String, email: String, fullName: String, userName: String) async throws {
+        let user = User(id: id, fullName: fullName, email: email, userName: userName)
+        do {
+            let userData = try Firestore.Encoder().encode(user)
+            try await Firestore.firestore().collection("users").document(id).setData(userData)
+        } catch {
+            print("DEBUG: Failed to upload user data with the following error: \(error)")
+        }
     }
 }

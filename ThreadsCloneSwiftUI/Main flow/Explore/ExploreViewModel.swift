@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+final class ExploreViewModel: ObservableObject {
+    @Published var users = [User]()
+    
+    init() {
+        Task { try await getAllUsers() }
+    }
+    
+    @MainActor
+    private func getAllUsers() async throws {
+        users = try await UserService.shared.getAllUsers()
+    }
+}

@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ExploreView: View {
     @State private var searchText = ""
+    @State private var vm = ExploreViewModel()
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(0 ... 10, id: \.self) { user in
+                    ForEach(vm.users) { user in
                         SearchItemView()
                     }
                 }

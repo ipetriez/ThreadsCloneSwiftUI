@@ -24,4 +24,11 @@ final class UserService {
         let user = try documentSnapshot.data(as: User.self)
         currentUser = user
     }
+    
+    func getAllUsers() async throws -> [User] {
+        guard let currentUserID = Auth.auth().currentUser?.uid else { return [] }
+        let documentSnapshot = try await Firestore.firestore().collection("users").getDocuments()
+        let users = documentSnapshot.documents.compactMap { try? $0.data(as: User.self) }
+        return users.filter { $0.id != currentUserID }
+    }
 }

@@ -50,6 +50,7 @@
 		70F030FD2B654B9300FCDAF2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030FC2B654B9300FCDAF2 /* LoginViewModel.swift */; };
 		70F031002B66645E00FCDAF2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F030FF2B66645E00FCDAF2 /* User.swift */; };
 		70F031022B66779E00FCDAF2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031012B66779E00FCDAF2 /* UserService.swift */; };
+		70F031052B68148C00FCDAF2 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		70F030FC2B654B9300FCDAF2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		70F030FF2B66645E00FCDAF2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		70F031012B66779E00FCDAF2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				704AE1502B61170E00693CFA /* Authorization flow */,
 				704AE1512B61178B00693CFA /* Main flow */,
 				70F030C82B64070400FCDAF2 /* Components */,
+				70F031032B68146C00FCDAF2 /* Utility */,
 				704AE1412B61020000693CFA /* Supporting files */,
 				704AE1302B5BAD5100693CFA /* Preview Content */,
 				70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */,
@@ -329,6 +332,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		70F031032B68146C00FCDAF2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,6 +440,7 @@
 				704AE1432B61026700693CFA /* LoginView.swift in Sources */,
 				70F030F32B65210000FCDAF2 /* RegistrationViewModel.swift in Sources */,
 				70F030F62B6521D900FCDAF2 /* AuthService.swift in Sources */,
+				70F031052B68148C00FCDAF2 /* DeveloperPreview.swift in Sources */,
 				704AE14E2B61111C00693CFA /* MainTabView.swift in Sources */,
 				704AE15C2B627AFA00693CFA /* ThreadItemView.swift in Sources */,
 				704AE1642B628B5D00693CFA /* UserItemView.swift in Sources */,

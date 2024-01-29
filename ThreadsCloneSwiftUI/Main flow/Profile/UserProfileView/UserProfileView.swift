@@ -9,36 +9,12 @@ import SwiftUI
 
 struct UserProfileView: View {
     @State private var selectedSegment: Segment = .threads
-    let user: User
+    @State var user: User?
     
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(user.fullName)
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                            
-                            Text(user.userName)
-                                .font(.subheadline)
-                        }
-                        
-                        if let bio = user.bio {
-                            Text(bio)
-                                .font(.footnote)
-                        }
-                        
-                        Text("13 followers")
-                            .font(.caption)
-                            .foregroundStyle(.gray)
-                    }
-                    
-                    Spacer()
-                    
-                    AvatarImageView("av-3")
-                }
+                ProfileHeaderView(user: $user)
                 
                 Button(action: {}, label: {
                     Text("Follow")

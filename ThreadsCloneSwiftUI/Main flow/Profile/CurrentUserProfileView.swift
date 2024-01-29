@@ -9,37 +9,13 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
     @State private var selectedSegment: Segment = .threads
-    @State private var vm = CurrentUserProfileViewModel()
+    @StateObject private var vm = CurrentUserProfileViewModel()
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 20) {
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading, spacing: 12) {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(vm.currentUser?.fullName ?? "")
-                                    .font(.title2)
-                                    .fontWeight(.semibold)
-                                
-                                Text(vm.currentUser?.userName ?? "")
-                                    .font(.subheadline)
-                            }
-                            
-                            if let bio = vm.currentUser?.bio {
-                                Text(bio)
-                                    .font(.footnote)
-                            }
-                            
-                            Text("13 followers")
-                                .font(.caption)
-                                .foregroundStyle(.gray)
-                        }
-                        
-                        Spacer()
-                        
-                        AvatarImageView("av-3")
-                    }
+                    ProfileHeaderView(user: $vm.currentUser)
                     
                     Button(action: {}, label: {
                         Text("Follow")

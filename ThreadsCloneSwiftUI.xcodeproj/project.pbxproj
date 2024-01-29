@@ -52,6 +52,7 @@
 		70F031022B66779E00FCDAF2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031012B66779E00FCDAF2 /* UserService.swift */; };
 		70F031052B68148C00FCDAF2 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */; };
 		70F031082B68211500FCDAF2 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031072B68211500FCDAF2 /* UserProfileView.swift */; };
+		70F0310A2B68225500FCDAF2 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031092B68225500FCDAF2 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		70F031012B66779E00FCDAF2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		70F031072B68211500FCDAF2 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		70F031092B68225500FCDAF2 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 				704AE15B2B627AFA00693CFA /* ThreadItemView.swift */,
 				704AE1632B628B5D00693CFA /* UserItemView.swift */,
 				704AE16B2B629B7F00693CFA /* ProfileViewSegmentedControl.swift */,
+				70F031092B68225500FCDAF2 /* ProfileHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				70F030F32B65210000FCDAF2 /* RegistrationViewModel.swift in Sources */,
 				70F030F62B6521D900FCDAF2 /* AuthService.swift in Sources */,
 				70F031052B68148C00FCDAF2 /* DeveloperPreview.swift in Sources */,
+				70F0310A2B68225500FCDAF2 /* ProfileHeaderView.swift in Sources */,
 				704AE14E2B61111C00693CFA /* MainTabView.swift in Sources */,
 				704AE15C2B627AFA00693CFA /* ThreadItemView.swift in Sources */,
 				704AE1642B628B5D00693CFA /* UserItemView.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import Combine
 
-final class ProfileViewModel: ObservableObject {
+final class CurrentUserProfileViewModel: ObservableObject {
     private var subscriptions = Set<AnyCancellable>()
     @Published var currentUser: User?
     

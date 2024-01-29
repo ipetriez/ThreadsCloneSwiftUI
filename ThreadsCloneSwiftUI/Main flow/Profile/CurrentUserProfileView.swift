@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct CurrentUserProfileView: View {
     @State private var selectedSegment: Segment = .threads
-    @State private var vm = ProfileViewModel()
+    @State private var vm = CurrentUserProfileViewModel()
     
     var body: some View {
         NavigationStack {
@@ -78,5 +78,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    CurrentUserProfileView()
 }

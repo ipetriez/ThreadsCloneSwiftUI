@@ -40,7 +40,7 @@ struct MainTabView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
             
-            ProfileView()
+            CurrentUserProfileView()
                 .tabItem { Image(systemName: selectedTab == 5 ? "person.fill" : "person")
                         .environment(\.symbolVariants, selectedTab == 5 ? .fill : .none)
                 }

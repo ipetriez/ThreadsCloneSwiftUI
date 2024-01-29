@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class DeveloperPreview {
-    static let shared = DeveloperPreview()
+    static let mock = DeveloperPreview()
     
     private init() { }
     

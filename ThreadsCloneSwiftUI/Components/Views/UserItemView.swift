@@ -15,7 +15,7 @@ struct UserItemView: View {
             HStack {
                 AvatarImageView("av-2")
                 
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 2) {
                     Text(user.userName)
                         .fontWeight(.semibold)
                     
@@ -43,5 +43,5 @@ struct UserItemView: View {
 }
 
 #Preview {
-    UserItemView(user: DeveloperPreview.shared.user)
+    UserItemView(user: DeveloperPreview.mock.user)
 }

@@ -18,13 +18,17 @@ struct CurrentUserProfileView: View {
                     ProfileHeaderView(user: $vm.currentUser)
                     
                     Button(action: {}, label: {
-                        Text("Follow")
+                        Text("Edit profile")
                             .font(.subheadline)
                             .fontWeight(.semibold)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.black)
                             .frame(width: 352, height: 32)
-                            .background(.black)
+                            .background(.white)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(.systemGray4), lineWidth: 1)
+                            }
                     })
                     
                     ProfileViewSegmentedControl(selectedSegment: $selectedSegment)

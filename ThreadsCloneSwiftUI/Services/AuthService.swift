@@ -33,6 +33,7 @@ final class AuthService {
     func loginUser(with email: String, password: String) async throws {
         do {
             userSession = try await Auth.auth().signIn(withEmail: email, password: password).user
+            try await UserService.shared.getCurrentUser()
         } catch {
             print("DEBUG: Failed to sign in with the following error: \(error)")
         }
@@ -41,6 +42,7 @@ final class AuthService {
     func signOut() {
         try? Auth.auth().signOut()
         userSession = nil
+        UserService.shared.currentUser = nil
     }
     
     @MainActor
@@ -49,6 +51,7 @@ final class AuthService {
         do {
             let userData = try Firestore.Encoder().encode(user)
             try await Firestore.firestore().collection("users").document(id).setData(userData)
+            UserService.shared.currentUser = user
         } catch {
             print("DEBUG: Failed to upload user data with the following error: \(error)")
         }

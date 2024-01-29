@@ -18,16 +18,18 @@ struct ProfileView: View {
                     HStack(alignment: .top) {
                         VStack(alignment: .leading, spacing: 12) {
                             VStack(alignment: .leading, spacing: 4) {
-                                Text("Charlie Moody")
+                                Text(vm.currentUser?.fullName ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                 
-                                Text("charlie_moody")
+                                Text(vm.currentUser?.userName ?? "")
                                     .font(.subheadline)
                             }
                             
-                            Text("Some random Charlie")
-                                .font(.footnote)
+                            if let bio = vm.currentUser?.bio {
+                                Text(bio)
+                                    .font(.footnote)
+                            }
                             
                             Text("13 followers")
                                 .font(.caption)

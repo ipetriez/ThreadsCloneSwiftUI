@@ -16,7 +16,7 @@ struct ExploreView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(vm.users) { user in
-                        SearchItemView()
+                        UserItemView(user: user)
                     }
                 }
             }

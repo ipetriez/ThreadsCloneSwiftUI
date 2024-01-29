@@ -7,17 +7,19 @@
 
 import SwiftUI
 
-struct SearchItemView: View {
+struct UserItemView: View {
+    let user: User
+    
     var body: some View {
         VStack {
             HStack {
                 AvatarImageView("av-2")
                 
                 VStack(alignment: .leading) {
-                    Text("jimmycool")
+                    Text(user.userName)
                         .fontWeight(.semibold)
                     
-                    Text("Jim Cool")
+                    Text(user.fullName)
                 }
                 .font(.footnote)
                 
@@ -41,5 +43,5 @@ struct SearchItemView: View {
 }
 
 #Preview {
-    SearchItemView()
+    UserItemView(user: User(id: "", fullName: "Default Name", email: "default.name@gmail.com", userName: "default.name"))
 }

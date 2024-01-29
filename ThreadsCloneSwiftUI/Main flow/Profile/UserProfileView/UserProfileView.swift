@@ -36,6 +36,7 @@ struct UserProfileView: View {
             }
             .padding(.vertical,8)
         }
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button(action: {

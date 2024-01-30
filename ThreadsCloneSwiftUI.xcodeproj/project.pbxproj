@@ -53,6 +53,7 @@
 		70F031052B68148C00FCDAF2 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */; };
 		70F031082B68211500FCDAF2 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031072B68211500FCDAF2 /* UserProfileView.swift */; };
 		70F0310A2B68225500FCDAF2 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031092B68225500FCDAF2 /* ProfileHeaderView.swift */; };
+		70F0310C2B68E4F000FCDAF2 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F0310B2B68E4F000FCDAF2 /* EditProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		70F031042B68148C00FCDAF2 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		70F031072B68211500FCDAF2 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		70F031092B68225500FCDAF2 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		70F0310B2B68E4F000FCDAF2 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				704AE16E2B63E53400693CFA /* EditProfileView.swift */,
+				70F0310B2B68E4F000FCDAF2 /* EditProfileViewModel.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				70F031022B66779E00FCDAF2 /* UserService.swift in Sources */,
 				704AE16F2B63E53400693CFA /* EditProfileView.swift in Sources */,
 				704AE1602B6288EC00693CFA /* ExploreViewModel.swift in Sources */,
+				70F0310C2B68E4F000FCDAF2 /* EditProfileViewModel.swift in Sources */,
 				704AE15E2B6288DC00693CFA /* ExploreView.swift in Sources */,
 				704AE1582B62799B00693CFA /* FeedView.swift in Sources */,
 				704AE1432B61026700693CFA /* LoginView.swift in Sources */,

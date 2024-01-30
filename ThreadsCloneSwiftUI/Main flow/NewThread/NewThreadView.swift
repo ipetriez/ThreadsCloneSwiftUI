@@ -15,7 +15,7 @@ struct NewThreadView: View {
         NavigationStack {
             VStack {
                 HStack(alignment: .top) {
-                    AvatarImageView("av-3")
+                    AvatarImageView(nil)
                     
                     VStack(alignment: .leading, spacing: 4) {
                         Text("charlie_moody")

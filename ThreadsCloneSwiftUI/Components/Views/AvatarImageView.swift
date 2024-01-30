@@ -6,20 +6,29 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct AvatarImageView: View {
-    private let imageName: String?
+    private let user: User?
     
     var body: some View {
-        Image(imageName ?? "avatar-placeholder")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 40, height: 40)
-            .clipShape(.circle)
+        if let imageURL = user?.profileImageURL {
+            KFImage(URL(string: imageURL))
+                .resizable()
+                .scaledToFill()
+                .frame(width: 40, height: 40)
+                .clipShape(.circle)
+        } else {
+            Image("avatar-placeholder")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 40, height: 40)
+                .clipShape(.circle)
+        }
     }
     
-    init(_ imageName: String?) {
-        self.imageName = imageName
+    init(_ user: User?) {
+        self.user = user
     }
 }
 

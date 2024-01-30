@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if let userSession = vm.userSession {
+            if let _ = vm.userSession {
                 MainTabView()
             } else {
                 LoginView()

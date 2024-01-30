@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 final class CurrentUserProfileViewModel: ObservableObject {
     private var subscriptions = Set<AnyCancellable>()
@@ -16,7 +17,9 @@ final class CurrentUserProfileViewModel: ObservableObject {
     }
     
     private func setupSubscriptions() {
-        UserService.shared.$currentUser.sink { [weak self] user in
+        UserService.shared.$currentUser
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] user in
             self?.currentUser = user
         }.store(in: &subscriptions)
     }

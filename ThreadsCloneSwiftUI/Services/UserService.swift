@@ -31,4 +31,10 @@ final class UserService {
         let users = documentSnapshot.documents.compactMap { try? $0.data(as: User.self) }
         return users.filter { $0.id != currentUserID }
     }
+    
+    func updateUserProfileImage(_ imageURL: String) async throws {
+        guard let currentUserID = Auth.auth().currentUser?.uid else { return }
+        try await Firestore.firestore().collection("users").document(currentUserID).updateData(["profileImageURL": imageURL])
+        self.currentUser?.profileImageURL = imageURL
+    }
 }

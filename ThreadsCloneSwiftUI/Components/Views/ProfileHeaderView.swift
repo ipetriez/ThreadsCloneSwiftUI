@@ -33,7 +33,7 @@ struct ProfileHeaderView: View {
             
             Spacer()
             
-            AvatarImageView(user)
+            AvatarImageView(user, imageSize: .medium)
         }
     }
 }

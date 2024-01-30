@@ -13,7 +13,7 @@ struct UserItemView: View {
     var body: some View {
         VStack {
             HStack {
-                AvatarImageView(user)
+                AvatarImageView(user, imageSize: .small)
                 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(user.userName)

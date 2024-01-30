@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
     @State private var selectedSegment: Segment = .threads
+    @State private var showEditProfile = false
     @StateObject private var vm = CurrentUserProfileViewModel()
     
     var body: some View {
@@ -17,7 +18,9 @@ struct CurrentUserProfileView: View {
                 VStack(spacing: 20) {
                     ProfileHeaderView(user: $vm.currentUser)
                     
-                    Button(action: {}, label: {
+                    Button(action: {
+                        showEditProfile.toggle()
+                    }, label: {
                         Text("Edit profile")
                             .font(.subheadline)
                             .fontWeight(.semibold)
@@ -41,6 +44,9 @@ struct CurrentUserProfileView: View {
                 }
                 .padding(.vertical,8)
             }
+            .sheet(isPresented: $showEditProfile, content: {
+                EditProfileView()
+            })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {

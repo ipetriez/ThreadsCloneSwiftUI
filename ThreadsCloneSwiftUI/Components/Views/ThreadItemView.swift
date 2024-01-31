@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct ThreadItemView: View {
+    let thread: Thread
+    
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                AvatarImageView(nil, imageSize: .small)
+                AvatarImageView(thread.author, imageSize: .small)
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text("Chuck Conor")
+                        Text(thread.author?.userName ?? "")
                             .fontWeight(.semibold)
                             .font(.footnote)
                         
                         Spacer()
                         
-                        Text("10m")
+                        Text("\(thread.timestamp)")
                             .font(.caption)
                             .foregroundStyle(Color(.systemGray3))
                         
@@ -31,7 +33,7 @@ struct ThreadItemView: View {
                         })
                     }
                     
-                    Text("Some cool guy")
+                    Text(thread.text)
                         .multilineTextAlignment(.leading)
                         .font(.footnote)
                     
@@ -64,5 +66,5 @@ struct ThreadItemView: View {
 }
 
 #Preview {
-    ThreadItemView()
+    ThreadItemView(thread: DeveloperPreview.mock.thread)
 }

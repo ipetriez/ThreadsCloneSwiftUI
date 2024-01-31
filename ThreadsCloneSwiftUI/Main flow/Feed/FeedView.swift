@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct FeedView: View {
+    @StateObject private var vm = FeedViewModel()
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(0 ... 10, id: \.self) { thread in
-                        ThreadItemView()
+                    ForEach(vm.threads) { thread in
+                        ThreadItemView(thread: thread)
                     }
                 }
             }

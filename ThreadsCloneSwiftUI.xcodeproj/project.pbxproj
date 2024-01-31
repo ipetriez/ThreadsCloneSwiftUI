@@ -60,6 +60,7 @@
 		70F031162B69386500FCDAF2 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031152B69386500FCDAF2 /* Thread.swift */; };
 		70F031182B69392300FCDAF2 /* NewThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031172B69392300FCDAF2 /* NewThreadViewModel.swift */; };
 		70F0311A2B69393F00FCDAF2 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F031192B69393F00FCDAF2 /* ThreadService.swift */; };
+		70F0311D2B6A5A7800FCDAF2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F0311C2B6A5A7800FCDAF2 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		70F031152B69386500FCDAF2 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		70F031172B69392300FCDAF2 /* NewThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThreadViewModel.swift; sourceTree = "<group>"; };
 		70F031192B69393F00FCDAF2 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
+		70F0311C2B6A5A7800FCDAF2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				704AE1512B61178B00693CFA /* Main flow */,
 				70F030C82B64070400FCDAF2 /* Components */,
 				70F031032B68146C00FCDAF2 /* Utility */,
+				70F0311B2B6A5A6500FCDAF2 /* Extensions */,
 				704AE1412B61020000693CFA /* Supporting files */,
 				704AE1302B5BAD5100693CFA /* Preview Content */,
 				70F030EE2B640A3A00FCDAF2 /* GoogleService-Info.plist */,
@@ -381,6 +384,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70F0311B2B6A5A6500FCDAF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70F0311C2B6A5A7800FCDAF2 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,6 +509,7 @@
 				704AE1682B6294DE00693CFA /* CurrentUserProfileView.swift in Sources */,
 				704AE12D2B5BAD5000693CFA /* ContentView.swift in Sources */,
 				704AE14C2B610DFC00693CFA /* AuthActionButtonModifier.swift in Sources */,
+				70F0311D2B6A5A7800FCDAF2 /* Date.swift in Sources */,
 				704AE1712B63F22300693CFA /* NewThreadView.swift in Sources */,
 				704AE12B2B5BAD5000693CFA /* ThreadsCloneSwiftUIApp.swift in Sources */,
 				704AE14A2B610CA400693CFA /* AuthFieldModifier.swift in Sources */,

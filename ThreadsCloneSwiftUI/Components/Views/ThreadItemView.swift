@@ -23,7 +23,7 @@ struct ThreadItemView: View {
                         
                         Spacer()
                         
-                        Text("\(thread.timestamp)")
+                        Text("\(thread.timestamp.dateValue().timestampString())")
                             .font(.caption)
                             .foregroundStyle(Color(.systemGray3))
                         

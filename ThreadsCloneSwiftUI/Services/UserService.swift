@@ -37,4 +37,9 @@ final class UserService {
         try await Firestore.firestore().collection("users").document(currentUserID).updateData(["profileImageURL": imageURL])
         self.currentUser?.profileImageURL = imageURL
     }
+    
+    func getUser(withID uid: String) async throws -> User {
+        let documentSnapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
+        return try documentSnapshot.data(as: User.self)
+    }
 }

@@ -38,7 +38,7 @@ struct CurrentUserProfileView: View {
                     
                     LazyVStack {
                         ForEach(0 ... 10, id: \.self) { thread in
-                            ThreadItemView()
+//                            ThreadItemView(thread: thread)
                         }
                     }
                 }

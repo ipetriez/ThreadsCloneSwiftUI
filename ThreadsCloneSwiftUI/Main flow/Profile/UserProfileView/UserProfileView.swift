@@ -9,12 +9,12 @@ import SwiftUI
 
 struct UserProfileView: View {
     @State private var selectedSegment: Segment = .threads
-    @State var user: User?
+    @StateObject var vm: UserProfileViewModel
     
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                ProfileHeaderView(user: $user)
+                ProfileHeaderView(user: $vm.user)
                 
                 Button(action: {}, label: {
                     Text("Follow")
@@ -29,8 +29,8 @@ struct UserProfileView: View {
                 ProfileViewSegmentedControl(selectedSegment: $selectedSegment)
                 
                 LazyVStack {
-                    ForEach(0 ... 10, id: \.self) { thread in
-//                        ThreadItemView(thread: thread)
+                    ForEach(vm.threads) { thread in
+                        ThreadItemView(thread: thread)
                     }
                 }
             }

@@ -37,8 +37,8 @@ struct CurrentUserProfileView: View {
                     ProfileViewSegmentedControl(selectedSegment: $selectedSegment)
                     
                     LazyVStack {
-                        ForEach(0 ... 10, id: \.self) { thread in
-//                            ThreadItemView(thread: thread)
+                        ForEach(vm.threads) { thread in
+                            ThreadItemView(thread: thread)
                         }
                     }
                 }

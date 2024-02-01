@@ -46,11 +46,11 @@ final class AuthService {
     }
     
     @MainActor
-    private func uploadUserData(_ id: String, email: String, fullName: String, userName: String) async throws {
-        let user = User(id: id, fullName: fullName, email: email, userName: userName)
+    private func uploadUserData(_ userID: String, email: String, fullName: String, userName: String) async throws {
+        let user = User(id: userID, fullName: fullName, email: email, userName: userName)
         do {
             let userData = try Firestore.Encoder().encode(user)
-            try await Firestore.firestore().collection("users").document(id).setData(userData)
+            try await Firestore.firestore().collection("users").document(userID).setData(userData)
             UserService.shared.currentUser = user
         } catch {
             print("DEBUG: Failed to upload user data with the following error: \(error)")
